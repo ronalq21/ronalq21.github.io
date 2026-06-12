@@ -1,74 +1,268 @@
+```html
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CubeSat Solar Panels</title>
+
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            margin: 40px;
+            background: #f4f4f4;
+            color: #222;
+        }
+
+        h1, h2 {
+            color: #003366;
+        }
+
+        .container {
+            max-width: 1000px;
+            margin: auto;
+            background: white;
+            padding: 30px;
+            border-radius: 10px;
+        }
+
+        .badge img {
+            margin: 5px;
+        }
+
+        .card {
+            background: #eef6ff;
+            padding: 15px;
+            margin: 15px 0;
+            border-left: 5px solid #0066cc;
+        }
+
+        pre {
+            background: #222;
+            color: white;
+            padding: 15px;
+            border-radius: 5px;
+        }
+
+        img.main {
+            width: 80%;
+            display: block;
+            margin: auto;
+        }
+
+        footer {
+            margin-top: 30px;
+            text-align: center;
+            color: gray;
+        }
+    </style>
+
+</head>
+
+<body>
+
+<div class="container">
+
 <h1 align="center">
-	CubeSat Solar Panels
-	<br>
+    CubeSat Solar Panels
 </h1>
 
-<h4 align="center">1U CubeSat engineering model solar panels project. </h4>
+<h3 align="center">
+    1U CubeSat engineering model solar panels project
+</h3>
 
-<p align="center">
-    <a href="">
-		<img src="https://img.shields.io/badge/status-development-red?style=for-the-badge">
-	</a>
-	<a href="">
-		<img src="https://img.shields.io/badge/version-v0.1-lightgray?style=for-the-badge">
-	</a>
-    <a href="">
-		<img src="https://img.shields.io/badge/open%20source-hardware-blue?style=for-the-badge">
-	</a>
-	<a href="">
-		<img src="https://img.shields.io/badge/license-GPL3-yellow?style=for-the-badge">
-	</a>
+
+<div class="badge" align="center">
+
+<img src="https://img.shields.io/badge/status-development-red?style=for-the-badge">
+
+<img src="https://img.shields.io/badge/version-v0.2-lightgray?style=for-the-badge">
+
+<img src="https://img.shields.io/badge/open-source-hardware-blue?style=for-the-badge">
+
+<img src="https://img.shields.io/badge/license-GPL3-yellow?style=for-the-badge">
+
+</div>
+
+
+<img class="main"
+src="https://github.com/andrempmattos/cubesat-solar-panels/blob/main/documentation/figures/15.png">
+
+
+<h2>Overview</h2>
+
+<p>
+This project contains the design and development of a complete solar
+power generation system for a 1U CubeSat engineering model.
+The objective is to create a modular solar panel solution for
+educational aerospace applications, integration tests and research.
 </p>
 
-<p align="center">
-  	<a href="#overview">Overview</a> •
-  	<a href="#repository-organization">Repository Organization</a> •
-  	<a href="#license">License</a> •
-  	<a href="#releases">Releases</a> •
-  	<a href="#notes">Notes</a>
+
+<h2>Main Features</h2>
+
+
+<div class="card">
+
+<h3>Solar Energy Generation</h3>
+
+<ul>
+<li>High efficiency photovoltaic cells.</li>
+<li>Up to 25% efficiency.</li>
+<li>Protection diodes against reverse current.</li>
+<li>Optimized solar cell distribution.</li>
+</ul>
+
+</div>
+
+
+
+<div class="card">
+
+<h3>Power Monitoring System</h3>
+
+<ul>
+<li>Voltage measurement.</li>
+<li>Current measurement.</li>
+<li>Temperature monitoring.</li>
+<li>MPPT algorithm support.</li>
+</ul>
+
+</div>
+
+
+
+<div class="card">
+
+<h3>ADCS Support</h3>
+
+<ul>
+<li>Accelerometer integration.</li>
+<li>Gyroscope support.</li>
+<li>Magnetorquer control.</li>
+<li>Sun light detection.</li>
+<li>Embedded copper coils.</li>
+</ul>
+
+</div>
+
+
+
+<h2>System Architecture</h2>
+
+<pre>
+
++----------------+
+| Solar Panel X  |
++----------------+
+
++----------------+
+| Solar Panel Y  |
++----------------+
+
++----------------+
+| Solar Panel Z  |
++----------------+
+
+</pre>
+
+
+<h2>Repository Organization</h2>
+
+<pre>
+
+documentation/
+    Technical documentation
+    Images and drawings
+
+hardware/
+    spx/
+    spy/
+    spz/
+
+references/
+    Datasheets
+    User guides
+
+</pre>
+
+
+
+<h2>Hardware Requirements</h2>
+
+<ul>
+<li>Solar cells.</li>
+<li>PCB manufactured boards.</li>
+<li>Temperature sensors.</li>
+<li>Current sensors.</li>
+<li>Microcontroller.</li>
+<li>Testing equipment.</li>
+</ul>
+
+
+
+<h2>Software Tools</h2>
+
+<ul>
+<li>KiCad for PCB design.</li>
+<li>MATLAB/Python for analysis.</li>
+<li>LTspice for simulation.</li>
+<li>GitHub for version control.</li>
+</ul>
+
+
+
+<h2>Testing</h2>
+
+<p>
+The prototype requires electrical and mechanical validation:
 </p>
 
-<p align="center">
-	<img width="80%" src="https://github.com/andrempmattos/cubesat-solar-panels/blob/main/documentation/figures/15.png">
+<ul>
+<li>Voltage and current measurements.</li>
+<li>Power generation analysis.</li>
+<li>Thermal tests.</li>
+<li>Mechanical integration tests.</li>
+</ul>
+
+
+
+<h2>Future Improvements</h2>
+
+<ul>
+<li>Battery management integration.</li>
+<li>Radiation protection analysis.</li>
+<li>Higher efficiency solar cells.</li>
+<li>Flight prototype development.</li>
+</ul>
+
+
+
+<h2>License</h2>
+
+<p>
+This project is open-source hardware under GPLv3 license.
+It is intended for educational and research purposes.
 </p>
 
-## Overview
-
-This repository includes the design and documentation of a complete set of CubeSat solar panels for engineering model assembly, integration and tests. The panels features:
-
-	- High efficiency solar cells:
-	  - 25% efficiency
-	  - Protection diodes
-	- MPPT algorithm support:
-	  - Voltage/current measurements
-	  - Temperature measurements
-	- ADCS algorithm support:
-	  - Accelerometer, gyrocope, and magnetorquer
-	  - Light detection
-	  - Current drivers
-	  - Embedded copper coils
-	- PCB cutouts:
-	  - Up to 4 GNSS antennas in +Y, -Y and -Z (16x16x6mm)
-	  - M12 camera lens cutout (18mm radius)
-
-The modules were inspired in the [GomSpace](https://gomspace.com/shop/subsystems/power/p110-solar-panel.aspx)/[ISIS](https://www.isispace.nl/product/isis-cubesat-solar-panels/) counterparts and tailored to be compatible with [SpaceLab](https://spacelab.ufsc.br/en/home/)'s first satellite mission ([FloripaSat-1](https://floripasat.ufsc.br/)). The project is part of the Optoelectronics course (taught at UFSC), which required a StartUp minimal viable product. It is a group project composed of [André Mattos](https://github.com/andrempmattos) and [Carlos Lemos]().
-
-## Repository Organization
-	- documentation: Complete documentation of all solar panels 
-	- hardware: Sources, outputs, and auxiliary documents 
-	  - spx: Solar panel model X (X axis)
-	  - spy: Solar panel model Y (Y axis)
-	  - spz: Solar panel model Z (Z axis)
-	- references: Set of datasheets, user guides, and auxiliary documentation 
-
-## License
-
-This project is open-source and under the GPLv3 license, but some third-part files and libraries are subjected to specific terms and comercial use might be prohibited. Therefore, the purpose of the open access approach is to support further educational use and academic projects.
-
-## Releases
-
-Check the [releases](https://github.com/andrempmattos/cubesat-solar-panels/releases) page to get the last stable version.
-
-## Notes
 
 
+<h2>Contributors</h2>
+
+<ul>
+<li>André Mattos</li>
+<li>Carlos Lemos</li>
+</ul>
+
+
+<footer>
+CubeSat Solar Panels Project © 2026
+</footer>
+
+
+</div>
+
+</body>
+</html>
+```
