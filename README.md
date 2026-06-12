@@ -1,268 +1,175 @@
-```html
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>CubeSat Solar Panels</title>
+    <title>Mi Proyecto Web</title>
 
     <style>
         body {
             font-family: Arial, sans-serif;
-            line-height: 1.6;
-            margin: 40px;
-            background: #f4f4f4;
-            color: #222;
+            background: #f2f2f2;
+            margin: 0;
+            padding: 0;
         }
 
-        h1, h2 {
-            color: #003366;
+        header {
+            background: #003366;
+            color: white;
+            text-align: center;
+            padding: 40px;
         }
 
-        .container {
-            max-width: 1000px;
-            margin: auto;
+        section {
             background: white;
-            padding: 30px;
+            width: 80%;
+            margin: 30px auto;
+            padding: 25px;
             border-radius: 10px;
         }
 
-        .badge img {
-            margin: 5px;
+        h2 {
+            color: #003366;
         }
 
         .card {
-            background: #eef6ff;
+            background: #e8f1ff;
             padding: 15px;
-            margin: 15px 0;
-            border-left: 5px solid #0066cc;
+            margin: 10px 0;
+            border-left: 5px solid #003366;
         }
 
-        pre {
+        footer {
+            text-align: center;
             background: #222;
             color: white;
             padding: 15px;
-            border-radius: 5px;
         }
 
-        img.main {
-            width: 80%;
+        img {
+            width: 250px;
             display: block;
             margin: auto;
         }
 
-        footer {
-            margin-top: 30px;
-            text-align: center;
-            color: gray;
-        }
     </style>
 
 </head>
 
+
 <body>
 
-<div class="container">
 
-<h1 align="center">
-    CubeSat Solar Panels
-</h1>
+<header>
 
-<h3 align="center">
-    1U CubeSat engineering model solar panels project
-</h3>
-
-
-<div class="badge" align="center">
-
-<img src="https://img.shields.io/badge/status-development-red?style=for-the-badge">
-
-<img src="https://img.shields.io/badge/version-v0.2-lightgray?style=for-the-badge">
-
-<img src="https://img.shields.io/badge/open-source-hardware-blue?style=for-the-badge">
-
-<img src="https://img.shields.io/badge/license-GPL3-yellow?style=for-the-badge">
-
-</div>
-
-
-<img class="main"
-src="https://github.com/andrempmattos/cubesat-solar-panels/blob/main/documentation/figures/15.png">
-
-
-<h2>Overview</h2>
+<h1>CubeSat Solar Panels</h1>
 
 <p>
-This project contains the design and development of a complete solar
-power generation system for a 1U CubeSat engineering model.
-The objective is to create a modular solar panel solution for
-educational aerospace applications, integration tests and research.
+Proyecto de diseño y desarrollo de paneles solares para un CubeSat 1U
+</p>
+
+</header>
+
+
+
+<section>
+
+<h2>Descripción del Proyecto</h2>
+
+<p>
+Este proyecto presenta el diseño de un sistema de generación de energía
+solar para un satélite CubeSat educativo. Incluye diseño electrónico,
+integración de sensores y pruebas de funcionamiento.
 </p>
 
 
-<h2>Main Features</h2>
+</section>
+
+
+
+<section>
+
+<h2>Características</h2>
 
 
 <div class="card">
-
-<h3>Solar Energy Generation</h3>
-
-<ul>
-<li>High efficiency photovoltaic cells.</li>
-<li>Up to 25% efficiency.</li>
-<li>Protection diodes against reverse current.</li>
-<li>Optimized solar cell distribution.</li>
-</ul>
-
+<b>☀ Panel Solar</b>
+<p>
+Celdas fotovoltaicas de alta eficiencia para generación eléctrica.
+</p>
 </div>
-
 
 
 <div class="card">
-
-<h3>Power Monitoring System</h3>
-
-<ul>
-<li>Voltage measurement.</li>
-<li>Current measurement.</li>
-<li>Temperature monitoring.</li>
-<li>MPPT algorithm support.</li>
-</ul>
-
+<b>⚡ Sistema de Energía</b>
+<p>
+Medición de voltaje, corriente y temperatura.
+</p>
 </div>
-
 
 
 <div class="card">
-
-<h3>ADCS Support</h3>
-
-<ul>
-<li>Accelerometer integration.</li>
-<li>Gyroscope support.</li>
-<li>Magnetorquer control.</li>
-<li>Sun light detection.</li>
-<li>Embedded copper coils.</li>
-</ul>
-
+<b>🛰 Control Satelital</b>
+<p>
+Soporte para sensores utilizados en sistemas ADCS.
+</p>
 </div>
 
 
+</section>
 
-<h2>System Architecture</h2>
+
+
+<section>
+
+<h2>Arquitectura del Sistema</h2>
 
 <pre>
 
-+----------------+
-| Solar Panel X  |
-+----------------+
+       +----------------+
+       |  Solar Panel X |
+       +----------------+
 
-+----------------+
-| Solar Panel Y  |
-+----------------+
+       +----------------+
+       |  Solar Panel Y |
+       +----------------+
 
-+----------------+
-| Solar Panel Z  |
-+----------------+
-
-</pre>
-
-
-<h2>Repository Organization</h2>
-
-<pre>
-
-documentation/
-    Technical documentation
-    Images and drawings
-
-hardware/
-    spx/
-    spy/
-    spz/
-
-references/
-    Datasheets
-    User guides
+       +----------------+
+       |  Solar Panel Z |
+       +----------------+
 
 </pre>
 
-
-
-<h2>Hardware Requirements</h2>
-
-<ul>
-<li>Solar cells.</li>
-<li>PCB manufactured boards.</li>
-<li>Temperature sensors.</li>
-<li>Current sensors.</li>
-<li>Microcontroller.</li>
-<li>Testing equipment.</li>
-</ul>
+</section>
 
 
 
-<h2>Software Tools</h2>
+<section>
 
-<ul>
-<li>KiCad for PCB design.</li>
-<li>MATLAB/Python for analysis.</li>
-<li>LTspice for simulation.</li>
-<li>GitHub for version control.</li>
-</ul>
-
-
-
-<h2>Testing</h2>
+<h2>Autor</h2>
 
 <p>
-The prototype requires electrical and mechanical validation:
+Desarrollado por: <b>Ronaldhino Jinez</b>
 </p>
-
-<ul>
-<li>Voltage and current measurements.</li>
-<li>Power generation analysis.</li>
-<li>Thermal tests.</li>
-<li>Mechanical integration tests.</li>
-</ul>
-
-
-
-<h2>Future Improvements</h2>
-
-<ul>
-<li>Battery management integration.</li>
-<li>Radiation protection analysis.</li>
-<li>Higher efficiency solar cells.</li>
-<li>Flight prototype development.</li>
-</ul>
-
-
-
-<h2>License</h2>
 
 <p>
-This project is open-source hardware under GPLv3 license.
-It is intended for educational and research purposes.
+Ingeniería Estadística e Informática
 </p>
 
+</section>
 
-
-<h2>Contributors</h2>
-
-<ul>
-<li>André Mattos</li>
-<li>Carlos Lemos</li>
-</ul>
 
 
 <footer>
-CubeSat Solar Panels Project © 2026
+
+<p>
+Página de prueba GitHub Pages © 2026
+</p>
+
 </footer>
 
 
-</div>
-
 </body>
+
 </html>
-```
