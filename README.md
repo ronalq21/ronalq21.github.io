@@ -2,6 +2,7 @@
 <html lang="es">
 
 <head>
+
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
@@ -10,137 +11,141 @@
 <style>
 
 *{
-    box-sizing:border-box;
+box-sizing:border-box;
 }
 
 body{
-    font-family:'Segoe UI', Arial, sans-serif;
-    margin:0;
-    background:#eef2f7;
-    color:#333;
+font-family:'Segoe UI',Arial,sans-serif;
+margin:0;
+background:#e9eef5;
+color:#333;
 }
 
 
 .container{
-    width:90%;
-    max-width:1100px;
-    margin:40px auto;
-    background:white;
-    display:grid;
-    grid-template-columns:320px 1fr;
-    box-shadow:0 10px 30px rgba(0,0,0,0.15);
+max-width:1150px;
+width:90%;
+margin:40px auto;
+background:white;
+display:grid;
+grid-template-columns:330px 1fr;
+box-shadow:0 15px 40px rgba(0,0,0,.18);
 }
 
 
-/* LADO IZQUIERDO */
+/* IZQUIERDA */
 
 .left{
-    background:#0b2545;
-    color:white;
-    padding:35px;
+background:#102a43;
+color:white;
+padding:35px;
 }
 
 
 .profile{
-    text-align:center;
+text-align:center;
 }
 
 
 .profile img{
-    width:150px;
-    height:150px;
-    border-radius:50%;
-    border:5px solid white;
+width:160px;
+height:160px;
+border-radius:50%;
+border:5px solid white;
 }
 
 
-.left h2{
-    border-bottom:2px solid #5bc0eb;
-    padding-bottom:8px;
-    margin-top:30px;
+.profile h2{
+font-size:25px;
+}
+
+
+.left h3{
+margin-top:30px;
+border-bottom:2px solid #4cc9f0;
+padding-bottom:8px;
 }
 
 
 .contact p{
-    font-size:15px;
+font-size:15px;
 }
 
 
 .skill{
-    margin:15px 0;
+margin:18px 0;
 }
 
 
 .bar{
-    height:8px;
-    background:#ccc;
-    border-radius:10px;
+height:8px;
+background:#ccc;
+border-radius:10px;
 }
 
 
 .progress{
-    height:8px;
-    background:#5bc0eb;
-    border-radius:10px;
+height:8px;
+background:#4cc9f0;
+border-radius:10px;
 }
 
 
 
-/* LADO DERECHO */
+/* DERECHA */
 
 .right{
-    padding:40px;
+padding:45px;
 }
 
 
 h1{
-    font-size:40px;
-    margin:0;
-    color:#0b2545;
+font-size:42px;
+color:#102a43;
+margin:0;
 }
 
 
 .subtitle{
-    color:#555;
-    font-size:20px;
+font-size:20px;
+color:#555;
 }
 
 
 .section{
-    margin-top:35px;
+margin-top:35px;
 }
 
 
 .section h2{
-    color:#0b2545;
-    border-bottom:2px solid #ddd;
-    padding-bottom:10px;
+color:#102a43;
+border-bottom:2px solid #ddd;
+padding-bottom:8px;
 }
 
 
 .card{
-    margin:20px 0;
+margin:20px 0;
 }
 
 
 .card h3{
-    margin-bottom:5px;
-    color:#1769aa;
+color:#1769aa;
+margin-bottom:5px;
 }
 
 
 ul{
-    line-height:1.8;
+line-height:1.9;
 }
 
 
-
 footer{
-    text-align:center;
-    padding:20px;
-    background:#0b2545;
-    color:white;
-    grid-column:1/3;
+grid-column:1/3;
+background:#102a43;
+color:white;
+text-align:center;
+padding:15px;
 }
 
 
@@ -148,11 +153,11 @@ footer{
 @media(max-width:800px){
 
 .container{
-    display:block;
+display:block;
 }
 
 footer{
-    grid-column:auto;
+grid-column:auto;
 }
 
 }
@@ -174,27 +179,25 @@ footer{
 
 <div class="profile">
 
-<img src="https://via.placeholder.com/150">
+<img src="https://via.placeholder.com/160">
 
 <h2>Ronaldhino Jinez</h2>
 
 <p>
-Ingeniero Estadístico e Informático
+Ingeniería Estadística e Informática
 </p>
 
 </div>
 
 
 
-<div class="contact">
+<h3>Contacto</h3>
 
-<h2>Contacto</h2>
+<div class="contact">
 
 <p>📍 Puno, Perú</p>
 
 <p>📧 ronaldhino@email.com</p>
-
-<p>📱 +51 900 000 000</p>
 
 <p>🌐 github.com/ronalq21</p>
 
@@ -202,16 +205,15 @@ Ingeniero Estadístico e Informático
 
 
 
-
-<h2>Habilidades</h2>
+<h3>Competencias</h3>
 
 
 <div class="skill">
 
-<p>Programación C++</p>
+<p>C++</p>
 
 <div class="bar">
-<div class="progress" style="width:85%"></div>
+<div class="progress" style="width:90%"></div>
 </div>
 
 </div>
@@ -223,11 +225,10 @@ Ingeniero Estadístico e Informático
 <p>Python</p>
 
 <div class="bar">
-<div class="progress" style="width:80%"></div>
+<div class="progress" style="width:85%"></div>
 </div>
 
 </div>
-
 
 
 
@@ -243,30 +244,33 @@ Ingeniero Estadístico e Informático
 
 
 
-
 <div class="skill">
 
 <p>Desarrollo Web</p>
 
 <div class="bar">
-<div class="progress" style="width:75%"></div>
+<div class="progress" style="width:80%"></div>
 </div>
 
 </div>
 
 
 
-
-<h2>Idiomas</h2>
+<h3>Idiomas</h3>
 
 <p>Español - Nativo</p>
 
 <p>Inglés Técnico - Intermedio</p>
 
 
+<h3>Tecnologías</h3>
+
+<p>
+C++ | Python | SQL | HTML | CSS | Git | Linux
+</p>
+
 
 </div>
-
 
 
 
@@ -278,7 +282,7 @@ Ingeniero Estadístico e Informático
 <h1>Ronaldhino Jinez</h1>
 
 <p class="subtitle">
-Ingeniero Estadístico e Informático | Analista de Datos | Desarrollador
+Analista de Datos | Programador | Ingeniería Estadística e Informática
 </p>
 
 
@@ -289,19 +293,17 @@ Ingeniero Estadístico e Informático | Analista de Datos | Desarrollador
 
 <h2>Perfil Profesional</h2>
 
-
 <p>
 
-Estudiante de Ingeniería Estadística e Informática con formación en
-programación, análisis de datos, modelamiento estadístico y desarrollo
-de soluciones tecnológicas.
+Estudiante de Ingeniería Estadística e Informática con conocimientos
+en programación científica, análisis de datos y desarrollo de software.
 
-Experiencia en proyectos académicos relacionados con inteligencia
-artificial, programación científica, análisis matemático y sistemas
-computacionales.
+Orientado al desarrollo de soluciones tecnológicas mediante métodos
+estadísticos, modelamiento matemático y herramientas computacionales.
 
-Apasionado por la innovación tecnológica y el desarrollo de soluciones
-basadas en datos.
+Experiencia académica desarrollando aplicaciones en C++, análisis
+estadístico con Python y proyectos relacionados con inteligencia
+artificial y procesamiento de información.
 
 </p>
 
@@ -315,28 +317,28 @@ basadas en datos.
 <div class="section">
 
 
-<h2>Educación</h2>
+<h2>Formación Académica</h2>
 
 
 <div class="card">
 
-<h3>Ingeniería Estadística e Informática</h3>
+<h3>
+Ingeniería Estadística e Informática
+</h3>
 
 <p>
 Universidad del Altiplano Puno
 </p>
 
 <p>
-2023 - 2029
+2023 - Actualidad
 </p>
 
 
 </div>
 
 
-
 </div>
-
 
 
 
@@ -345,43 +347,59 @@ Universidad del Altiplano Puno
 <div class="section">
 
 
-<h2>Experiencia y Proyectos</h2>
+<h2>Proyectos Destacados</h2>
 
 
 
 <div class="card">
 
-<h3>Desarrollo de Software Estadístico</h3>
+<h3>
+Sistema de Regresión Lineal Múltiple en C++
+</h3>
 
 <p>
-Diseño de aplicaciones en C++ para cálculo matricial,
-regresión lineal múltiple y procesamiento numérico.
+
+Desarrollo de software estadístico utilizando operaciones matriciales
+para calcular coeficientes mediante el método de mínimos cuadrados.
+Implementación de lectura de datos, procesamiento numérico y
+visualización gráfica.
+
 </p>
 
 </div>
 
 
 
+
 <div class="card">
 
-<h3>Proyecto CubeSat Solar Panels</h3>
+<h3>
+Análisis de Datos y Machine Learning
+</h3>
 
 <p>
-Diseño conceptual de sistemas solares para satélites educativos,
-integrando electrónica, energía renovable y documentación técnica.
+
+Aplicación de técnicas estadísticas como pruebas de hipótesis,
+clustering, análisis exploratorio de datos y evaluación de modelos
+predictivos.
+
 </p>
 
 </div>
 
 
 
+
 <div class="card">
 
-<h3>Análisis de Datos</h3>
+<h3>
+Desarrollo Web y Portafolio Digital</h3>
 
 <p>
-Aplicación de métodos estadísticos, pruebas de hipótesis,
-modelos predictivos y visualización de información.
+
+Creación de páginas web utilizando HTML y CSS, publicación de
+proyectos mediante GitHub y administración de entornos Linux.
+
 </p>
 
 </div>
@@ -389,8 +407,6 @@ modelos predictivos y visualización de información.
 
 
 </div>
-
-
 
 
 
@@ -404,19 +420,21 @@ modelos predictivos y visualización de información.
 
 <ul>
 
-<li>C++ avanzado orientado a proyectos científicos</li>
+<li>Programación C++ orientada a cálculo científico</li>
 
-<li>Python para análisis de datos</li>
+<li>Python para análisis estadístico y procesamiento de datos</li>
 
-<li>Base de datos SQL</li>
+<li>SQL y gestión de bases de datos</li>
+
+<li>Modelamiento estadístico</li>
 
 <li>Machine Learning básico</li>
 
-<li>Git y GitHub</li>
+<li>Programación numérica</li>
 
-<li>HTML, CSS y desarrollo web</li>
+<li>Control de versiones con Git/GitHub</li>
 
-<li>Modelamiento estadístico</li>
+<li>Desarrollo web con HTML y CSS</li>
 
 </ul>
 
@@ -430,14 +448,15 @@ modelos predictivos y visualización de información.
 
 <div class="section">
 
+
 <h2>Objetivo Profesional</h2>
 
 
 <p>
 
-Formar parte de equipos tecnológicos donde pueda aplicar
-estadística, informática e innovación para desarrollar soluciones
-eficientes mediante el uso de datos y programación.
+Desarrollarme en áreas relacionadas con ciencia de datos,
+estadística aplicada y desarrollo tecnológico, aportando soluciones
+basadas en información, programación e innovación.
 
 </p>
 
@@ -452,7 +471,7 @@ eficientes mediante el uso de datos y programación.
 
 <footer>
 
-© 2026 Ronaldhino Jinez - Curriculum Vitae
+© 2026 Ronaldhino Jinez | Curriculum Vitae
 
 </footer>
 
